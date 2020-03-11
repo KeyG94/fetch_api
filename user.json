@@ -1,0 +1,16 @@
+[{
+    
+    "name": "John",
+    "age": 30,
+    "car": "mercedes"
+},
+{
+    "name": "Jim",
+    "age": 49,
+    "car": "bmw"
+},
+{
+    "name": "Josh",
+    "age": 20,
+    "car": null
+}]
