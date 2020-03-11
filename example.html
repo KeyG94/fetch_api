@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script defer src="scripts/fetch.js"></script>
     <title>Document</title>
-    <script defer src="scripts/newScript.js"></script>
+
 </head>
 <body>
-    <button id="get-btn">Get Text</button>
-    <button id="get-user">Get JSON</button>
-    <button id="get-api">Get API Data</button>
-    <hr>
-    <div id="output"></div>
-    <form action="" id="addPost">
-        <div>
-            <input type="text" id="title" placeholder="Title">
+    <div class="btn-box">
+        <button class="get-btn red" id="get-btn">Get Text</button>
+        <button class="get-btn blue" id="get-user">Get JSON</button>
+        <button class="get-btn green" id="get-api">Get API Data</button>
+    </div>
+    <form action="" id="addPost" class="form-box">
+        <div class="title-container">
+            <input type="text" id="title" placeholder="Title" class="input-title">
         </div>
-        <div>
-            <textarea id="body" placeholder="body"></textarea>
+        <div class="text-container">
+            <textarea id="body" placeholder="Notes..." class="input-text"></textarea>
         </div>
-        <div>
-            <input type="submit" value="submit">
+        <div class="btn-container">
+            <input type="submit" value="submit" class="input-btn">
         </div>
-    </form>
+    </form>   
+    <div id="output" class="output-container"></div>
 <!------<div>
             <h3>${post.title}</h3>
             <p>${post.body}</p>

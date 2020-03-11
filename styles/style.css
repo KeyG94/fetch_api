@@ -1,0 +1,179 @@
+body{
+    background: url('https://images.pexels.com/photos/747964/pexels-photo-747964.jpeg?cs=srgb&dl=person-on-a-bridge-near-a-lake-747964.jpg&fm=jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: scroll;
+    max-width: 70vw;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-box{
+    display: flex;
+    justify-content: space-around;
+    margin: 2em auto;
+    padding: 4em auto;
+    border-radius: 25px;
+}
+
+.get-btn{
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    padding: .5em;
+    border-radius: 10px;
+    transition: ease-in 0.3s;
+    cursor: pointer;
+}
+
+.get-btn:focus{
+    outline: none;
+    
+}
+
+.red{
+    color:black;
+    background: rgba(255, 0, 0, 0.4);
+}
+
+.red:hover{
+    background: rgba(255, 0, 0, 0.8);
+}
+
+.red:focus{
+    background: rgba(255, 0, 0, 0.7);
+}
+
+.blue{
+    color:black;
+    background: rgba(0, 26, 255, 0.4);
+}
+
+.blue:hover{
+    background: rgba(0, 26, 255, 0.8);
+}
+
+.blue:focus{
+    background: rgba(0, 26, 255, 0.7);
+}
+
+.green{
+    color:black;
+    background: rgba(0, 255, 21, 0.4);
+}
+
+
+.green:hover{
+    background: rgba(0, 255, 21, 0.8);
+}
+
+.green:focus{
+    background: rgba(0, 255, 21, 0.7);
+}
+
+.form-box{
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.form-box div{
+    width: 100%;
+    margin: 1em auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.title-container{
+
+}
+
+
+.input-title {
+    width: 90%;
+    background: none;
+    font-size: 17px;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgba(0,0,0,0.7);
+    transition: ease 0.4s
+}
+
+.input-text {
+    width: 90%;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    background: none;
+    font-size: 17px;
+    color: white;
+    overflow: scroll;
+    resize: none;
+    height: 200px;
+    background-color: rgba(0,0,0,0.7);
+    transition: ease 0.4s
+}
+
+.input-title:focus{
+    box-shadow: 0 0 10px 3px rgba(0, 255, 21, 0.6);
+}
+
+.input-text:focus{
+    box-shadow: 0 0 10px 3px rgba(0, 255, 21, 0.6);
+}
+
+/*Remove autofill that the browser curses you with.*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 0;
+  -webkit-text-fill-color: whitesmoke;
+  -webkit-box-shadow: 0 0 10px 4px rgba(0, 255, 21, 0.6);
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.input-btn{
+    background: none;
+    border: none;
+    background-color: rgba(0, 255, 21, 0.5);
+    font-size: 19px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.input-btn:hover{
+    background-color: rgba(0, 255, 21, 0.9);
+    transition: ease 0.5s;
+    cursor: pointer;
+}
+
+.output-container{
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin: 1em 0;
+    padding: 10px;
+    background: none;
+    font-size: 17px;
+    color: whitesmoke;
+    overflow: scroll;
+    resize: none;
+    height: 350px;
+    background-color: rgba(0,0,0,0.7);
+    transition: ease 0.4s
+}

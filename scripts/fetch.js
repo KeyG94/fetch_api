@@ -53,10 +53,10 @@ function getAPI() {
     fetch("https://jsonplaceholder.typicode.com/posts")
         .then((res) => res.json())
         .then((data) => {
-            let output = '<h2>Posts</h2>';
+            let output = '<h1>Posts</h1>';
             data.forEach(function (post) {
                 output += `        <div>
-                <h3>${post.title}</h3>
+                <h2>${post.title}</h2>
                 <p>${post.body}</p>
             </div>`
             })
@@ -64,7 +64,8 @@ function getAPI() {
         })
 };
 
-function addPost() {
+// posting the entry to the api web server
+function addPost(e) {
     e.preventDefault();
 
     let title = document.getElementById('title').value;
@@ -76,8 +77,8 @@ function addPost() {
             'Accept': 'application/json, text/plain, */*,',
             'Content-type': 'application/json'
         },
-        body: JSON.stringify({ body: body, body: body })
+        body:JSON.stringify({ title:title, body:body})
     })
         .then((res) => res.json())
         .then((data) => console.log(data))
-};
+}
